@@ -1,0 +1,11 @@
+{
+	"database":  {
+		"url": "mongodb://localhost/node-platform"
+  },
+  "server": {
+  	"workers": 1
+  },
+  "http":{
+    "sessionSecret": "NcWmGvbPcTEZcUpF6yo8"
+  }
+}

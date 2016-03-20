@@ -1,0 +1,37 @@
+{
+  "name": "node-platform",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "lint": "bin/lint",
+    "start": "bin/start",
+    "test": "./bin/test",
+    "test-watch": "./bin/test-watch"
+  },
+  "dependencies": {
+    "async": "1.5.x",
+    "basic-auth": "1.0.x",
+    "bluebird": "3.3.x",
+    "body-parser": "1.15.x",
+    "connect-mongo": "^1.1.0",
+    "connect-mongostore": "0.1.x",
+    "cookie-parser": "1.4.x",
+    "cors": "2.7.x",
+    "dotenv": "1.2.x",
+    "express": "4.13.x",
+    "express-session": "1.13.x",
+    "forever": "0.15.x",
+    "method-override": "2.3.x",
+    "moment": "2.12.x",
+    "mongoose": "4.2.x",
+    "nconf": "0.8.x"
+  },
+  "devDependencies": {
+    "chai": "3.4.x",
+    "eslint": "1.10.x",
+    "mocha": "2.3.x"
+  },
+  "engines": {
+    "node": "4.2.x"
+  }
+}
