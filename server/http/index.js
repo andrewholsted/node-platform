@@ -10,8 +10,8 @@ let nconf = require('nconf');
 let session = require('express-session');
 let MongoStore = require('connect-mongo')(session);    
 let apiRoutes = require('./routes/api'); 
-let errorRoutes = require('./routes/error');             
-
+let errorRoutes = require('./routes/error');   
+let port = nconf.get('server:port');          
 
 module.exports = function initHttpServer(done){
   app.use(bodyParser.json());
@@ -33,5 +33,6 @@ module.exports = function initHttpServer(done){
   }));
   app.use(apiRoutes);
   app.use(errorRoutes);
+  app.listen(port);
   done();
 };

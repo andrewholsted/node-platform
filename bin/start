@@ -1,4 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-echo "Starting server..."
-forever --minUptime=1000 --spinSleepTime=1000 ./config/forever/development.json
+if [ "${NODE_ENV}" == "production" ]; then
+  forever --minUptime=1000 --spinSleepTime=1000 ./config/forever/production.json
+else
+  echo "Starting server..."
+  nodemon -w ./server index.js
+fi
+
+
